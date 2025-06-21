@@ -7,10 +7,7 @@ export default function ProgressBar({ pct, label, color }) {
         <span>{label}</span><span>{Math.round(pct)}%</span>
       </div>
       <div className="w-full bg-gray-200 rounded-full h-3">
-        <div
-          className={clsx('h-3 rounded-full transition-all', color)}
-          style={{ width: pct + '%' }}
-        />
+        <div className={clsx('h-3 rounded-full transition-all', color)} style={{ width: pct + '%' }} />
       </div>
     </div>
   );
